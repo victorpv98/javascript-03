@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios - 03</title>
+    <script src="js/script01.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1>Calculadora de salario del profesor</h1>
+      <form>
+        Horas trabajadas: <input type="number" id="horasTrabajadas" /><br />
+        Tarifa por hora: <input type="number" id="tarifaPorHora" /><br />
+        <button type="button" onclick="calcularSalario()">
+          Calcular salario
+        </button>
+      </form>
+      <br />
+      Salario: S/.<span id="salario"></span>
+    </section>
+    <section>
+      <h1>Calculadora de perimetro</h1>
+      <label for="radio">Radio:</label>
+      <input type="number" id="radio" /><br />
+      <button onclick="calcularPerimetro()">Calcular perímetro</button>
+      <div id="resultado01"></div>
+      <button onclick="calcularPerimetroReducido01()">
+        Calcular perímetro reducido al 50%
+      </button>
+      <div id="resultado02"></div>
+      <button onclick="calcularPerimetroReducido02()">
+        Calcular perímetro reducido al 25%
+      </button>
+      <div id="resultado03"></div>
+    </section>
+    <section>
+      <h1>Calculadora de salario</h1>
+      <p>Horas trabajadas:</p>
+      <input type="number" id="horasLaborales" />
+      <p>Tarifa de pago por hora:</p>
+      <input type="number" id="tarifaPago" />
+      <button type="button" onclick="calcularSalarioPorcentaje()">
+        Calcular salario
+      </button>
+      <p>Salario: <span id="salario"></span></p>
+      <p>10% del salario: <span id="porcentaje10"></span></p>
+      <p>30% del salario: <span id="porcentaje30"></span></p>
+      <p>60% del salario: <span id="porcentaje60"></span></p>
+      <p>80% del salario: <span id="porcentaje80"></span></p>
+    </section>
+    <section>
+      <h1>Calculadora de calificación final</h1>
+      <form>
+        Calificación parcial 1:<br />
+        <input type="number" id="calificacionParcial1" />
+        <br />
+        Calificación parcial 2:<br />
+        <input type="number" id="calificacionParcial2" />
+        <br />
+        Calificación parcial 3:<br />
+        <input type="number" id="calificacionParcial3" />
+        <br />
+        Calificación examen final:<br />
+        <input type="number" id="calificacionExamenFinal" />
+        <br />
+        Calificación trabajo final:<br />
+        <input type="number" id="calificacionTrabajoFinal" />
+        <br /><br />
+        <button type="button" onclick="calcularCalificacionFinal()">
+          Calcular calificación final
+        </button>
+      </form>
+      <p>Calificación final: <span id="calificacionFinal"></span></p>
+    </section>
+    <section>
+      <h1>Calculadora de Presupuesto</h1>
+      <form id="formulario">
+        <label for="presupuesto">Monto presupuestal:</label><br />
+        <input type="text" id="presupuesto" /><br />
+        <label for="ginecologia">Ginecología:</label><br />
+        <input type="text" id="ginecologia" disabled /><br />
+        <label for="traumatologia">Traumatología:</label><br />
+        <input type="text" id="traumatologia" disabled /><br />
+        <label for="pediatria">Pediatría:</label><br />
+        <input type="text" id="pediatria" disabled /><br />
+        <button type="button" onclick="calcularPresupuesto()">Calcular</button>
+      </form>
+    </section>
+  </body>
+</html>
